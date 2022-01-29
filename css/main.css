@@ -84,13 +84,15 @@ body {
 }
 
 .page-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -102,10 +104,23 @@ body {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__web {
@@ -117,14 +132,14 @@ body {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .site-nav {
-    display: none;
+    display: flex;
   }
 }
 
@@ -168,18 +183,18 @@ body {
 }
 
 .contacts {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .contacts {
-    display: none;
+    display: flex;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     flex-direction: row;
   }
@@ -190,12 +205,20 @@ body {
   align-items: center;
   color: var(--text-color);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition-property: color;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -206,7 +229,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -214,16 +237,30 @@ body {
 
 .contacts__icon-smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 10px;
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts__icon-smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .contacts__icon-mail {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
   fill: currentColor;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
