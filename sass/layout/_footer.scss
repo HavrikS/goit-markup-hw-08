@@ -1,46 +1,44 @@
-// .logo__studio--white {
-//   color: var(--primary-white-color);
-// }
+.logo__studio--white {
+  color: var(--primary-white-color);
+}
 
-// .footer-title {
-//   line-height: 1.14;
-//   text-transform: uppercase;
-//   color: var(--primary-white-color);
-// }
+.company-social-inform {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  //   margin-left: 70px;
+  //   flex-grow: 1;
+}
 
-// .company-social-inform {
-//   margin-left: 70px;
-//   flex-grow: 1;
-// }
-
-// .company-social {
-//   display: flex;
-//   margin-top: 20px;
-//   &__item {
-//     & + & {
-//       margin-left: 10px;
-//     }
-//   }
-//   &__link {
-//     width: 44px;
-//     height: 44px;
-//     background-color: rgba(255, 255, 255, 0.1);
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border-radius: 50%;
-//     color: var(--primary-white-color);
-//     transition-property: background-color;
-//     transition-duration: var(--primary-transition-duration);
-//     transition-timing-function: var(--primary-transition-timing-function);
-//     &:hover,
-//     &:focus {
-//       background-color: var(--accent-color);
-//     }
-//   }
-//   &__icon {
-//     width: 20px;
-//     height: 20px;
-//     fill: currentColor;
-//   }
-// }
+.company-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  &__item {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-white-color);
+    transition-property: background-color;
+    transition-duration: var(--primary-transition-duration);
+    transition-timing-function: var(--primary-transition-timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
