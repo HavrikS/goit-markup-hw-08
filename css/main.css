@@ -100,6 +100,12 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1200px) {
+  .last-footer {
+    align-items: start;
+  }
+}
+
 .footer-title {
   line-height: 1.14;
   text-transform: uppercase;
@@ -133,6 +139,19 @@ body {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-mail {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-mail {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .footer-button {
   display: flex;
   justify-content: center;
@@ -164,6 +183,13 @@ body {
   padding-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .send-form {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .icon-send {
   margin-left: 10px;
   width: 24px;
@@ -183,12 +209,25 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .left-footer {
+    align-items: flex-start;
+  }
+}
+
 .company {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .company {
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
 }
 
 .company__addres {
@@ -213,6 +252,21 @@ body {
 .address-container {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .address-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-container {
+    justify-content: flex-start;
+    align-items: baseline;
+  }
 }
 
 .address-informations {
@@ -246,15 +300,8 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
-    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -277,6 +324,13 @@ body {
 @media screen and (min-width: 768px) {
   .site-nav {
     display: flex;
+    padding-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    padding-left: 93px;
   }
 }
 
@@ -810,6 +864,15 @@ body {
   display: flex;
   flex-direction: column;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .company-social-inform {
+    align-items: flex-start;
+    padding-left: 70px;
+    padding-bottom: 0;
+    flex-grow: 1;
+  }
 }
 
 .company-social {

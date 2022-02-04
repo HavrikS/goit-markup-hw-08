@@ -19,11 +19,10 @@
   font-size: 24px;
   line-height: 1.17;
   text-decoration: none;
-  @media screen and (min-width: 768px) {
-    margin-right: 88px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   margin-right: 88px;
+  // }
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -41,6 +40,10 @@
   padding-bottom: 32px;
   @media screen and (min-width: 768px) {
     display: flex;
+    padding-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 93px;
   }
   &__link {
     color: var(--primary-text-color);
