@@ -275,6 +275,7 @@ body {
 }
 
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -502,6 +503,15 @@ body {
 .modal-button:focus .modal-button-x,
 .modal-button:hover .modal-button-x {
   fill: var(--accent-color);
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-white-color);
 }
 
 .page-header {
