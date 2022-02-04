@@ -929,7 +929,6 @@ body {
 }
 
 .filter-btn__main {
-  margin-bottom: 15px;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: inherit;
@@ -941,12 +940,6 @@ body {
   border: none;
   padding: 6px 20px;
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
-}
-
-@media screen and (min-width: 768px) {
-  .filter-btn__main {
-    margin-bottom: 0;
-  }
 }
 
 .button-filter__item:not(:last-child) {
@@ -969,25 +962,37 @@ body {
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
+.filter-btn__second:nth-child(-n + 2) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn__second:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
 .filter-btn__second:hover, .filter-btn__second:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;
 }
 
-.card-text {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-}
-
-.card-text .title {
-  margin-bottom: 4px;
+.card-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .card-hover {
   position: relative;
   overflow: hidden;
+  max-width: 450px;
+  height: auto;
+}
+
+.card-hover__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-hover-text {
@@ -1025,15 +1030,52 @@ body {
   line-height: 1.87;
 }
 
-.card {
-  display: block;
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: var(--primary-transition-duration);
   transition-timing-function: var(--primary-transition-timing-function);
 }
 
-.card:focus, .card:hover {
+.product-card:focus, .product-card:hover {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-item {
+    flex-basis: calc(100% / 2 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+  }
+}
+
+.card-text {
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.card-text .title {
+  margin-bottom: 4px;
 }
 /*# sourceMappingURL=main.css.map */
