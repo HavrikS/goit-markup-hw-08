@@ -19,7 +19,7 @@
         <div class="container page-container">
             <nav class="page-nav">
                 <a href="./index.html" lang="en" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-                <button type="button" class="menu-open-btn"><svg class="menu-open-btn__x">
+                <button type="button" class="menu-open-btn" data-menu-open><svg class="menu-open-btn__x">
                         <use href="./images/icons.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
@@ -40,14 +40,13 @@
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>+38 096 111 11 11
                         </a>
-                    </li>
-                    
+                    </li>                    
                 </ul>
             </nav>
         </div>
-        <!-- <div class="mob-menu">
+        <div class="mob-menu is-hidden" data-menu>
             <div class="mob-menu-container">
-            <button type="button" class="menu-close-btn"><svg class="menu-close-btn__x">
+            <button type="button" class="menu-close-btn" data-menu-close><svg class="menu-close-btn__x">
                 <use href="./images/icons.svg#icon-X"></use>
             </svg>
             </button>
@@ -79,7 +78,7 @@
                 </li>
             </ul>
             </div>
-        </div> -->
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -480,5 +479,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
