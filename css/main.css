@@ -35,6 +35,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -275,7 +277,6 @@ body {
 }
 
 .backdrop {
-  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
