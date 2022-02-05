@@ -645,6 +645,7 @@ body {
 }
 
 .page-nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -811,6 +812,36 @@ body {
     width: 16px;
     height: 12px;
   }
+}
+
+.menu-open-btn {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-open-btn__x {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: var(--primary-transition-duration);
+  transition-timing-function: var(--primary-transition-timing-function);
+}
+
+.menu-open-btn__x:hover {
+  fill: var(--accent-color);
 }
 
 .hero {

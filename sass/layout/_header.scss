@@ -9,6 +9,7 @@
 }
 
 .page-nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -24,9 +25,11 @@
     line-height: 1.19;
   }
 }
+
 .logo__web {
   color: var(--accent-color);
 }
+
 .logo__studio {
   color: var(--second-logo-color);
 }
@@ -140,5 +143,39 @@
   @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
+  }
+}
+
+// .page-container {
+//   position: relative;
+//   width: 100%;
+//   @media screen and (max-width: 480px) {
+//     max-width: 480;
+//   }
+// }
+
+.menu-open-btn {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-open-btn__x {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: var(--primary-transition-duration);
+  transition-timing-function: var(--primary-transition-timing-function);
+  &:hover {
+    fill: var(--accent-color);
   }
 }
