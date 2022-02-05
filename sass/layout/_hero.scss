@@ -1,4 +1,5 @@
 .hero {
+  background-size: cover;
   background-color: var(--hero-bcg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/tel/hero-tel.jpg);
@@ -36,9 +37,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // max-width: 360px;
+    max-width: 360px;
     @media screen and (min-width: 1200px) {
-      max-width: 696px;
+      max-width: 768px;
     }
     padding: 0;
   }

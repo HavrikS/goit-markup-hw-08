@@ -148,9 +148,16 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="list team-container">
                     <li class="team-item">
-                        <div class="team-item__img-bloc">
-                        <img src="./images/img(1).jpg" alt="Фото члена команды"class="team-item__img" >
-                        </div>
+                        <picture>
+                            <source srcset="./images/img(1).jpg 1x, ./images/img(1)-2x.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                            <source srcset="./images/tablet/img1-tablet.jpg 1x, ./images/tablet/img1-tablet-2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/tel/img1-tel.jpg 1x, ./images/tel/img1-tel-2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/img(1).jpg" alt="Фото члена команды" class="team-item__img">
+                        </picture>
+                        <!-- <div class="team-item__img-bloc">
+                        
+                        </div> -->
                         <div class="team-item__blok">
                             <h3 class="team-item__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team-item__text">Product Designer</p>
