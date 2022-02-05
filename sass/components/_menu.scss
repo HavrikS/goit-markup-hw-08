@@ -1,14 +1,21 @@
 .mob-menu-container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+  padding: 48px 15px 48px 48px;
+  margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .menu-close-btn {
+  position: absolute;
   display: block;
-  margin-left: auto;
+  top: 10px;
+  right: 10px;
   background-color: var(--primary-white-color);
   width: 40px;
   height: 40px;
@@ -47,6 +54,12 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--primary-text-color);
+    transition-property: color;
+    transition-duration: var(--primary-transition-duration);
+    transition-timing-function: var(--primary-transition-timing-function);
+    &:hover {
+      color: var(--accent-color);
+    }
   }
   &-contacts__tel {
     font-weight: 500;
@@ -76,11 +89,18 @@
 
 .mob-menu-social {
   padding-top: 64px;
-  padding-bottom: 38px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__item {
-  display: inline-block;
+  &:not(:last-child) {
+    border-right: 1px solid var(--text-color);
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
 }
 
 .mob-menu-social__link {
@@ -89,5 +109,6 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+
   color: var(--accent-color);
 }
