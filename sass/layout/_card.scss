@@ -37,10 +37,7 @@
 .list {
   & .title {
     color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(700, 18px, 2, 0.06em);
     text-decoration: none;
   }
   & .after-title {
@@ -54,7 +51,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-
   text-decoration: none;
   transition-property: box-shadow;
   transition-duration: var(--primary-transition-duration);
